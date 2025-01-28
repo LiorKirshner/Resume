@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my Resume</title>
+    <style>
+        /* עיצוב לרשימת ה-SKILLS */
+        .skills-list {
+            list-style: none; /* ביטול עיצוב ברירת המחדל של הרשימה */
+            display: flex; /* הצגת הפריטים בשורה אחת */
+            gap: 15px; /* רווח בין הפריטים */
+            padding: 0;
+            margin: 0;
+        }
+
+        .skills-list li {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .skills-list li::before {
+            content: "";
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: black;
+            border-radius: 50%;
+        }
+
+        /* עיצוב ה-footer */
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            background-color: #f5f5f5;
+            padding: 10px 0;
+            font-size: 14px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #0077b5; /* צבע לינקדאין */
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <summary>
+        <h1>Lior Kirshner</h1>
+        <img src="./lior.JPG" alt="Lior pic" width="150"/>
+        <p>
+            <h2>Summary</h2>
+             Junior Software Engineer with a B.Sc. in Mathematics and Computer Science from Ariel University.
+              Skilled in Java, Python, and data structures, with hands-on experience in algorithm design and robotic computer vision. Eager to apply my technical knowledge and problem-solving abilities in a dynamic work environment.
+        </p>
+        <h3>SKIlLS</h3>
+        <ul class="skills-list">
+            <li>Java</li>
+            <li>PYTHON</li>
+            <li>MATLAB</li>
+            <li>DATA STRUCTURES</li>
+            <li>ALGORITHMS</li>
+            <li>Graph theory</li>
+        </ul>
+    </summary>
+    <hr />
+    <education>
+        <h2>Education</h2>
+        <H3>B.Sc. in Mathematics and Computer Science<br />
+            Ariel University  -  (2021-2024)</H3>
+        <h4>personal projects</h4>
+        <ul>
+            <li><h5>"MASA" - Share-Ride application</h5>
+                Co-founded a startup in the Ariel University Accelerator program, focusing on Entrepreneurship & Innovation. Led the development of a ride-sharing application, applying graph theory. Utilized Python to develop core features, and collaborated with a team of 3 members to ensure project success.</li>
+        </ul>    
+    </education>
+    <hr />          
+    <work>
+        <h3>Work Experience</h3>
+        <ul>
+            <li><h4>Mathematics Instructor</h4>
+                <h5>"Educating For Excellence"(2023)</h5>
+                Tutoring and teaching school students     
+            </li>
+        </ul>    
+    </work> 
+    <army>
+        <h3>MILITARY SERVICE</h3>
+        <ul>
+            <li><h4>Prisoner guide, Military Police(2015-2018)</h4>
+                Commander, sergeant at "6 Prison"  
+            </li>
+            <li><h4> Reserve duty (2024-2025)</h4>
+                Warden soldier - High security prison
+            </li>
+        </ul>
+    </army>    
+
+    <!-- Footer Section -->
+    <footer>
+        Connect with me on 
+        <a href="https://www.linkedin.com/in/lior-kirshner/" target="_blank">LinkedIn</a>
+    </footer>           
+</body>
+</html>
