@@ -8,8 +8,9 @@
         /* עיצוב לרשימת ה-SKILLS */
         .skills-list {
             list-style: none; /* ביטול עיצוב ברירת המחדל של הרשימה */
-            display: flex; /* הצגת הפריטים בשורה אחת */
-            gap: 15px; /* רווח בין הפריטים */
+            display: grid; /* שימוש ב-grid לפריסת הפריטים */
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* פריסה ל-2 עמודות במידת הצורך */
+            gap: 10px; /* רווח בין הפריטים */
             padding: 0;
             margin: 0;
         }
@@ -17,16 +18,13 @@
         .skills-list li {
             display: flex;
             align-items: center;
-            gap: 5px;
+            gap: 8px;
         }
 
         .skills-list li::before {
-            content: "";
-            display: inline-block;
-            width: 8px;
-            height: 8px;
-            background-color: black;
-            border-radius: 50%;
+            content: "✅"; /* החלפת העיגול בסימן ✅ */
+            color: green; /* צבע ירוק לסימן */
+            font-size: 1.2em; /* התאמת גודל הסימן */
         }
 
         /* עיצוב ה-footer */
@@ -63,6 +61,7 @@
             <li>Java</li>
             <li>PYTHON</li>
             <li>MATLAB</li>
+            <li>C#</li>
             <li>ALGORITHMS</li>
             <li>DATA STRUCTURES</li>        
             <li>GRAPH THEORY</li>
